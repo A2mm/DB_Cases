@@ -20,7 +20,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('products', 'ProductController@count_status');
 
+// route to fetch data according to case 1
 Route::get('case/1', 'Productcase1Controller@fetch');
+// roue to fetch data according to case 2
 Route::get('case/2', 'Productcase2Controller@fetch');
+// roue to fetch data according to case 3
 Route::get('case/3', 'Productcase3Controller@fetch');
 
